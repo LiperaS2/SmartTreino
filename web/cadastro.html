@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crie sua conta SmartTreino e comece a organizar seus treinos e acompanhar sua evolução.">
+    <title>Crie sua conta — SmartTreino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="cadastro.css">
+</head>
+<body class="signup-page">
+    <header class="signup-header">
+        <div class="signup-header-content">
+            <a class="signup-logo" href="index.html" aria-label="SmartTreino — voltar à página inicial">
+                <span class="signup-logo-mark" aria-hidden="true">S</span>
+                <span>smart<span>treino</span></span>
+            </a>
+            <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Voltar à página inicial</a>
+        </div>
+    </header>
+
+    <main class="signup-main">
+        <div class="signup-layout">
+            <section class="signup-presentation" aria-labelledby="presentation-title">
+                <img
+                    class="presentation-image"
+                    src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=85"
+                    alt="Academia moderna com equipamentos de musculação"
+                    fetchpriority="high">
+                <div class="presentation-overlay"></div>
+                <div class="presentation-content">
+                    <p class="presentation-eyebrow"><span></span> Seu próximo nível começa aqui</p>
+                    <h1 id="presentation-title">Transforme seus objetivos em <span>resultados.</span></h1>
+                    <p class="presentation-description">Organize seus treinos, acompanhe sua evolução e mantenha o foco no que importa: chegar mais longe, no seu ritmo.</p>
+                    <ul class="benefit-list">
+                        <li><span aria-hidden="true">✓</span> Treinos organizados para sua rotina</li>
+                        <li><span aria-hidden="true">✓</span> Acompanhamento da sua evolução</li>
+                        <li><span aria-hidden="true">✓</span> Foco nos seus objetivos pessoais</li>
+                    </ul>
+                    <div class="presentation-signature" aria-hidden="true">
+                        <span class="signature-line"></span>
+                        <span>Treino com propósito. Evolução no seu ritmo.</span>
+                    </div>
+                </div>
+                <span class="presentation-decoration" aria-hidden="true">ST</span>
+            </section>
+
+            <section class="signup-form-area" aria-labelledby="form-title">
+                <div class="signup-card">
+                    <div class="form-heading">
+                        <span class="form-icon" aria-hidden="true">✦</span>
+                        <p class="form-eyebrow">Comece sua jornada</p>
+                        <h2 id="form-title">Crie sua conta</h2>
+                        <p class="form-intro">Preencha seus dados e dê o primeiro passo para uma rotina mais forte.</p>
+                    </div>
+
+                    <form action="ControleUsuario" method="post">
+                        <input type="hidden" name="origem" value="cadastrar">
+                        <div class="signup-field">
+                            <label for="nome">Nome completo</label>
+                            <input
+                                type="text"
+                                id="nome"
+                                name="nome"
+                                placeholder="Como podemos te chamar?"
+                                autocomplete="name"
+                                minlength="2"
+                                required>
+                        </div>
+
+                        <div class="signup-field">
+                            <label for="email">E-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="voce@email.com"
+                                autocomplete="email"
+                                required>
+                        </div>
+
+                        <div class="signup-field">
+                            <label for="telefone">Telefone</label>
+                            <input
+                                type="tel"
+                                id="telefone"
+                                name="telefone"
+                                placeholder="(00) 00000-0000"
+                                autocomplete="tel">
+                        </div>
+
+                        <div class="signup-field">
+                            <label for="senha">Senha</label>
+                            <input
+                                type="password"
+                                id="senha"
+                                name="senha"
+                                placeholder="Crie uma senha (mínimo de 8 caracteres)"
+                                autocomplete="new-password"
+                                minlength="8"
+                                required>
+                        </div>
+
+                        <div class="signup-field">
+                            <label for="confirmar-senha">Confirmar senha</label>
+                            <input
+                                type="password"
+                                id="confirmar-senha"
+                                name="confirmar-senha"
+                                placeholder="Digite sua senha novamente"
+                                autocomplete="new-password"
+                                minlength="8"
+                                required>
+                        </div>
+
+                        <div class="signup-consent">
+                            <input
+                                type="checkbox"
+                                id="termos"
+                                name="termos"
+                                value="aceito"
+                                required>
+                            <span class="consent-description" id="consent-description">
+                                Li e concordo com os
+                                <a href="#" aria-label="Termos de Uso — configure o link quando a página estiver disponível">Termos de Uso</a>
+                                e a
+                                <a href="#" aria-label="Política de Privacidade — configure o link quando a página estiver disponível">Política de Privacidade</a>
+                            </span>
+                        </div>
+
+                        <button class="signup-button" type="submit">Criar minha conta <span aria-hidden="true">→</span></button>
+                    </form>
+
+                    <p class="login-prompt">Já tem uma conta? <a href="index.html#login">Fazer login</a></p>
+                    <p class="signup-demo-note">Após o cadastro, use seu e-mail e senha para entrar.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="signup-footer">
+        <p><span>SmartTreino</span> · © 2026 Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
